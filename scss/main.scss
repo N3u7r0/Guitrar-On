@@ -1,0 +1,53 @@
+/*aplique general*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h6 {
+    text-align: center;
+    color: red;
+}
+
+/*index.html*/
+.carrousel__index__principal {
+    display: flex;
+    justify-content: center;
+
+    .banner__carrousel__uno {
+        background-image: url("https://media.guitarcenter.com/is/image/MMGS7/Priv      ate-Stock-Modern-Eagle-V-Curly-Maple-Top-Ebony-Fretboard-with-Pattern-Neck-Electric-Guitar-Laguna-Dragons-Breath/L77602000001000-00-500x500.jpg");
+        background-size: cover;
+        width: 500px;
+    }
+
+    .banner__carrousel__dos {
+        background-image: url("https://media.guitarcenter.com/is/image/MMGS7/Priv      ate-Stock-Modern-Eagle-V-Curly-Maple-Top-Ebony-Fretboard-with-Pattern-Neck-Electric-Guitar-Laguna-Dragons-Breath/L77602000001000-00-500x500.jpg");
+        background-size: cover;
+        width: 500px;
+    }
+}
+.container__main__index{
+    border-top:2px solid;
+    border-bottom: 8px solid;
+    border-color: rgb(10, 10, 10);
+
+    .row{
+        margin: 1px;
+    }
+    .col{
+        border:2px solid black;
+        margin: 4px;
+        padding: 0%;
+        background-color: black;
+        h6{
+            margin-bottom: 0%;
+            padding-bottom: 2px;
+            background-color: black;
+        }
+    }
+}
