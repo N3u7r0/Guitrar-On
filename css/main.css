@@ -1,15 +1,33 @@
+.navbar-text p {
+  font-family: 'Satisfy', cursive;
+  padding: 0%;
+  font-size: 19px;
+  margin: 0%;
+  color: rgba(174, 2, 2, 0.767); }
+
 /*aplique general*/
 * {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  font-family: 'Fjalla One', sans-serif; }
 
 h1 {
+  padding-top: 10px;
   text-align: center;
-  color: red; }
+  font-family: 'Satisfy', cursive; }
+
+.spanh {
+  color: rgba(176, 2, 2, 0.854);
+  font-family: 'Satisfy', cursive;
+  font-size: 110%; }
 
 h6 {
   text-align: center;
-  color: red; }
+  color: rgba(255, 0, 0, 0.777); }
+
+header {
+  box-shadow: 0px 2px 10px;
+  color: rgba(217, 1, 1, 0.689); }
 
 /*index.html*/
 .carrousel__index__principal {
