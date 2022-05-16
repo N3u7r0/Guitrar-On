@@ -1,3 +1,9 @@
+
+/*variables*/
+$color__principal: rgba(174, 2, 2, 0.767);
+
+
+
 /*aplique general*/
 * {
     padding: 0px;
@@ -8,23 +14,23 @@
 h1 {
     padding-top: 10px;
     text-align: center;
-    font-family: 'Satisfy', cursive ;
+    font-family: 'Smooch', cursive; ;
     
 }
     .spanh{
-        color: rgba(176, 2, 2, 0.854);
-        font-family: 'Satisfy', cursive ;
+        color:  $color__principal;
+        font-family: 'Smooch', cursive;
         font-size:110% ;
     }
 
 h6 {
     text-align: center;
-    color: rgba(255, 0, 0, 0.777);
+    color:  $color__principal;
 
     
 }
 header{
     box-shadow: 0px 2px 10px;
-    color:rgba(217, 1, 1, 0.689);
+    color: $color__principal;
 
 }
