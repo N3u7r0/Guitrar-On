@@ -1,14 +1,64 @@
 footer {
     background-color: black;
-    background-clip: border-box;
-    box-shadow: inset -5px 3px 10px 1px  rgba(217, 1, 1, 0.689);
-    h2{
+    background-size: cover;
+    
+    box-shadow: inset -5px 3px 10px 1px rgba(217, 1, 1, 0.689);
+
+    h2 {
         padding-top: 10px;
+        padding-left:8px ;
+        margin-bottom: 0%;
         color: rgba(255, 255, 255, 0.964);
+
+        
     }
+    .redes{
+        // flex para compeltar bottom con background-color, no borrar
+        display: flex;
+            ul{display: flex;
+                flex-direction:column;
+                li{
+                    display: flex;
+                    margin: 2px;
+                }
+            }
+    }
+
 }
-.spanh{
+
+.spanh {
+    p{
     font-size: 100%;
     color: rgba(176, 2, 2, 0.854);
-    font-family: 'Smooch', cursive;
+    font-family:'Fjalla One', sans-serif;
+    }
+}
+.icono-facebook {
+    background-image: url(./images/footer/facebook_color_icons_generated.jpg);
+}
+
+.icono-instagram {
+    background-image: url(./images/footer/instagram_color_icons_generated.jpg);
+}
+
+.icono-whatsapp {
+    background-image: url(./images/footer/whatsapp_color_icons_generated.jpg);
+}
+$iconos: (
+    instagram:#ff9900e6,
+    facebook: #0303b1e6,
+    whatsapp: #01c001e6,
+);
+
+@each $icono,
+$color in $iconos {
+    .icono-#{$icono} {
+
+        border: solid 1px $color;
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background-position: center center;
+    
+    }
 }
