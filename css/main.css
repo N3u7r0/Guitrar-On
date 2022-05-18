@@ -10,11 +10,10 @@ h1 {
   padding-top: 10px;
   text-align: center;
   font-family: 'Smooch', cursive; }
-
-.spanh {
-  color: rgba(174, 2, 2, 0.767);
-  font-family: 'Smooch', cursive;
-  font-size: 110%; }
+  h1 .spanh {
+    color: rgba(174, 2, 2, 0.767);
+    font-family: 'Smooch', cursive;
+    font-size: 110%; }
 
 h6 {
   text-align: center;
@@ -53,6 +52,12 @@ header {
       padding-bottom: 2px;
       background-color: black; }
 
+/* breakpoint*/
+@media screen and (min-width: 576px) {
+  h6 {
+    text-align: center;
+    text-size-adjust: 50px; } }
+
 .navbar-text p {
   font-family: 'Satisfy', cursive;
   padding: 0%;
@@ -76,7 +81,12 @@ footer {
       flex-direction: column; }
       footer .redes ul li {
         display: flex;
-        margin: 2px; }
+        margin: 2px;
+        color: aliceblue; }
+
+.red_red {
+  color: rgba(174, 2, 2, 0.767);
+  font-size: 102%; }
 
 .spanh p {
   font-size: 100%;
@@ -112,3 +122,38 @@ footer {
   height: 30px;
   background-size: cover;
   background-position: center center; }
+
+.animation {
+  display: flex;
+  justify-content: center; }
+  .animation img {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    box-shadow: 0px 2px 15px;
+    color: rgba(174, 2, 2, 0.767);
+    animation: caution 2s ease 1s 1 normal forwards; }
+
+.animation__text {
+  padding-top: 10px;
+  text-align: center; }
+
+@keyframes caution {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%; }
+  10% {
+    transform: rotate(8deg); }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg); }
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg); }
+  80% {
+    transform: rotate(-8deg); }
+  90% {
+    transform: rotate(8deg); } }

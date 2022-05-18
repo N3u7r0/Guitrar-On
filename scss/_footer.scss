@@ -1,38 +1,40 @@
 footer {
     background-color: black;
     background-size: cover;
-    
     box-shadow: inset -5px 3px 10px 1px rgba(217, 1, 1, 0.689);
-
     h2 {
         padding-top: 10px;
-        padding-left:8px ;
+        padding-left: 8px;
         margin-bottom: 0%;
         color: rgba(255, 255, 255, 0.964);
-
-        
     }
-    .redes{
+    .redes {
         // flex para compeltar bottom con background-color, no borrar
         display: flex;
-            ul{display: flex;
-                flex-direction:column;
-                li{
-                    display: flex;
-                    margin: 2px;
-                }
-            }
+        ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                display: flex;
+                margin: 2px;
+                color: aliceblue;
+            }   
+        }
     }
-
+}
+.red_red{
+    color: $color__principal;
+    font-size: 102%;
 }
 
 .spanh {
-    p{
-    font-size: 100%;
-    color: rgba(176, 2, 2, 0.854);
-    font-family:'Fjalla One', sans-serif;
+    p {
+        font-size: 100%;
+        color: rgba(176, 2, 2, 0.854);
+        font-family: 'Fjalla One', sans-serif;
     }
 }
+
 .icono-facebook {
     background-image: url(./images/footer/facebook_color_icons_generated.jpg);
 }
@@ -44,6 +46,7 @@ footer {
 .icono-whatsapp {
     background-image: url(./images/footer/whatsapp_color_icons_generated.jpg);
 }
+
 $iconos: (
     instagram:#ff9900e6,
     facebook: #0303b1e6,
@@ -59,6 +62,6 @@ $color in $iconos {
         height: 30px;
         background-size: cover;
         background-position: center center;
-    
+
     }
 }
