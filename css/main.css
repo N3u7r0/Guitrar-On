@@ -52,12 +52,6 @@ header {
       padding-bottom: 2px;
       background-color: black; }
 
-/* breakpoint*/
-@media screen and (min-width: 576px) {
-  h6 {
-    text-align: center;
-    text-size-adjust: 50px; } }
-
 .navbar-text p {
   font-family: 'Satisfy', cursive;
   padding: 0%;
@@ -66,6 +60,8 @@ header {
   color: rgba(174, 2, 2, 0.767); }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   background-size: cover;
   box-shadow: inset -5px 3px 10px 1px rgba(217, 1, 1, 0.689); }
@@ -75,7 +71,10 @@ footer {
     margin-bottom: 0%;
     color: rgba(255, 255, 255, 0.964); }
   footer .redes {
-    display: flex; }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*carita*/ }
     footer .redes ul {
       display: flex;
       flex-direction: column; }
@@ -83,6 +82,10 @@ footer {
         display: flex;
         margin: 2px;
         color: aliceblue; }
+    footer .redes .loco {
+      margin-right: 50px; }
+      footer .redes .loco img {
+        width: 100px; }
 
 .red_red {
   color: rgba(174, 2, 2, 0.767);
@@ -94,30 +97,30 @@ footer {
   font-family: 'Fjalla One', sans-serif; }
 
 .icono-facebook {
-  background-image: url(./images/footer/facebook_color_icons_generated.jpg); }
+  background-image: url(../images/footer/facebook_color_icons_generated.jpg); }
 
 .icono-instagram {
-  background-image: url(./images/footer/instagram_color_icons_generated.jpg); }
+  background-image: url(../images/footer/instagram_color_icons_generated.jpg); }
 
 .icono-whatsapp {
-  background-image: url(./images/footer/whatsapp_color_icons_generated.jpg); }
+  background-image: url(../images/footer/whatsapp_color_icons_generated.jpg); }
 
 .icono-instagram {
-  border: solid 1px #ff9900e6;
+  border: solid 2px #ff9900e6;
   width: 30px;
   height: 30px;
   background-size: cover;
   background-position: center center; }
 
 .icono-facebook {
-  border: solid 1px #0303b1e6;
+  border: solid 2px #0303b1e6;
   width: 30px;
   height: 30px;
   background-size: cover;
   background-position: center center; }
 
 .icono-whatsapp {
-  border: solid 1px #01c001e6;
+  border: solid 2px #01c001e6;
   width: 30px;
   height: 30px;
   background-size: cover;
@@ -137,6 +140,34 @@ footer {
 .animation__text {
   padding-top: 10px;
   text-align: center; }
+
+.background__redes {
+  background-color: rgba(144, 142, 142, 0.773);
+  border: solid 2px rgba(174, 2, 2, 0.767);
+  box-shadow: 5px 5px 10px;
+  margin-left: 10px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.form__card {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: center; }
+  .form__card form {
+    background-color: black;
+    border-top: solid 2px rgba(174, 2, 2, 0.767);
+    border-bottom: solid 2px rgba(174, 2, 2, 0.767);
+    border-right: solid 2px rgba(174, 2, 2, 0.767);
+    border-left: 0px rgba(174, 2, 2, 0.767);
+    width: 250px; }
+  .form__card span {
+    background-color: black;
+    border-top: solid 2px rgba(174, 2, 2, 0.767);
+    border-bottom: solid 2px rgba(174, 2, 2, 0.767);
+    border-right: 2px rgba(174, 2, 2, 0.767);
+    border-left: solid 2px rgba(174, 2, 2, 0.767);
+    width: 250px; }
 
 @keyframes caution {
   0%,

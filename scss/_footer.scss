@@ -1,4 +1,6 @@
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: black;
     background-size: cover;
     box-shadow: inset -5px 3px 10px 1px rgba(217, 1, 1, 0.689);
@@ -9,8 +11,9 @@ footer {
         color: rgba(255, 255, 255, 0.964);
     }
     .redes {
-        // flex para compeltar bottom con background-color, no borrar
         display: flex;
+        flex-direction:row;
+        justify-content: space-between;
         ul {
             display: flex;
             flex-direction: column;
@@ -19,6 +22,14 @@ footer {
                 margin: 2px;
                 color: aliceblue;
             }   
+        }
+        /*carita*/
+        .loco{
+            margin-right: 50px;
+            img{
+                width: 100px;
+                
+            }
         }
     }
 }
@@ -36,15 +47,15 @@ footer {
 }
 
 .icono-facebook {
-    background-image: url(./images/footer/facebook_color_icons_generated.jpg);
+    background-image: url(../images/footer/facebook_color_icons_generated.jpg);
 }
 
 .icono-instagram {
-    background-image: url(./images/footer/instagram_color_icons_generated.jpg);
+    background-image: url(../images/footer/instagram_color_icons_generated.jpg);
 }
 
 .icono-whatsapp {
-    background-image: url(./images/footer/whatsapp_color_icons_generated.jpg);
+    background-image: url(../images/footer/whatsapp_color_icons_generated.jpg);
 }
 
 $iconos: (
@@ -57,7 +68,7 @@ $iconos: (
 $color in $iconos {
     .icono-#{$icono} {
 
-        border: solid 1px $color;
+        border: solid 2px $color;
         width: 30px;
         height: 30px;
         background-size: cover;
